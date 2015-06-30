@@ -47,8 +47,6 @@ EOL;
 		echo "<br><a href='http://my.uoreplay.com/player.php?id=$charId'>$charName</a>";
 	}
 }
-?>
-<?php
 if (!isset($_SESSION['myusername'])) {
 	ECHO <<<EOL
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
