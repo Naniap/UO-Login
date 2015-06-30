@@ -22,7 +22,7 @@ class SQL {
 	 */
 	public static function getConnection() {
 		if (is_null(SQL::$connection)) {
-			SQL::$connection = new mysqli(Config::HOST, Config::USERNAME, Config::$pw, Config::DATABASE);
+			SQL::$connection = new mysqli(Config::HOST, Config::USERNAME, Config::$password, Config::DATABASE);
 			SQL::$connection->set_charset('utf8');
 		}
 		if (SQL::$connection->connect_error)
